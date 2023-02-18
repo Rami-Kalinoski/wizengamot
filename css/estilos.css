@@ -1,0 +1,303 @@
+/*RESET CSS*/
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #7B8FA1;
+}
+
+/*PROPIEDADES GENERALES*/
+.aboreto {
+    font-family: 'Aboreto', cursive;
+}
+.sofiaSans {
+    font-family: 'Sofia Sans', sans-serif;
+}
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.italic{
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.overline {
+    text-decoration: overline;
+}
+
+.inline {
+    display: inline;
+}
+.inlineblock {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-family: 'Sofia Sans', sans-serif;
+    color: whitesmoke;
+}
+
+h3 {
+    font-size: 3rem;
+    font-family: 'Sofia Sans', sans-serif;
+    color: whitesmoke;
+}
+
+section {
+    margin: 10rem 5rem;
+}
+
+p {
+    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/*PROPIEDADES PARA LINKS*/
+a {
+    text-decoration: none;
+}
+
+/*PROPIEDADES PARA EL HEADER*/
+header {
+    background-color: #567189;
+}
+
+#headerh1Div {
+    display: flex;
+    justify-content: center;
+}
+
+#headerh1 {
+    font-size: 7rem;
+    font-family: 'Aboreto', cursive;
+    color: whitesmoke;
+    text-align: center;
+}
+/*BARRA DE NAV*/
+nav {
+    height: 4rem;
+    padding: 2rem;
+    border-top: 0.1rem solid whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.liNav {
+    margin-top: 1.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2.5rem;
+}
+.navLink {
+    font-size: 3rem;
+    font-family: 'Sofia Sans', sans-serif;
+    color: whitesmoke;
+}
+
+/*PROPIEDADES PARA EL FOOTER*/
+footer {
+    background-color: #567189;
+    margin-bottom: 0rem;
+    height: 10rem;
+    font-size: 2.5em;
+    font-family: 'Sofia Sans', sans-serif;
+    color: whitesmoke;
+    display: flex;
+}
+
+#footerP {
+    margin-left: 10rem;
+}
+
+/*INICIO*/
+/*PROPIEDADES PARA EL MAIN DEL INICIO*/
+#inicioh2Div {
+    display: inline;
+    margin-left: 30rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#inicioh2 {
+    display: inline;
+}
+
+#presentacionSection {
+    margin-top: 5rem;
+    padding: 0rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#presentacionArticle {
+    padding: 5rem 5rem 5rem 5rem;
+    width: 50vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#harryimgArticle {
+    padding-right: 10rem;
+}
+
+#harryimgInicio {
+    height:55rem;
+    border: 0.25rem solid #567189;
+}
+/*PROPIEDADES PARA LA SEGUNDA SECCIÓN DEL INDEX, LA DE VOLDEMORT*/
+#voldemortSection {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#voldemortArticle {
+    padding: 2rem 5rem 5rem 5rem;
+    width: 50vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#voldemortimgArticle {
+    padding-right: 10rem;
+}
+
+#voldemortimgInicio {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+/*FILMACIONES*/
+/*SECCION FILMACIONES*/
+
+
+#filmArticle {
+    display: flex;
+    flex-direction: column;
+}
+
+#filmdiv1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#filmdiv2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#filmHP1div {
+    display: flex;
+    flex-direction: column;
+}
+
+#hp1imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+#filmHP2div {
+    display: flex;
+    flex-direction: column;
+}
+
+#hp2imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+#filmHP3div {
+    display: flex;
+    flex-direction: column;
+}
+
+#hp3imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+#filmHP4div {
+    display: flex;
+    flex-direction: column;
+}
+
+#hp4imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+#filmHP5div {
+    display: flex;
+    flex-direction: column;
+}
+
+#hp5imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+#filmHP6div {
+    display: flex;
+    flex-direction: column;
+}
+
+#hp6imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+#filmHP7div {
+    display: flex;
+}
+
+#hp71imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
+
+#hp72imgFilm {
+    height: 50rem;
+    border: 0.25rem solid #567189;
+}
