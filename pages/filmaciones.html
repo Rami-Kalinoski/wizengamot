@@ -6,155 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--FAVICON-->
     <link rel="shortcut icon" href="../img/favi.jpg" type="image/x-icon">
-    <!--CSS-->
-    <link rel="stylesheet" href="../css/estilos.css">
     <!--FONTFAMILY-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:wght@300&family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
     <!--TITULO-->
     <title>Wizengamot | Filmaciones</title>
 </head>
 <body>
-    <!--HEADER Y NAVEGACION-->
-    <header>
-        <div id="headerh1Div">
-            <a href="../index.html"><h1 id="headerh1" class="inline">WIZENGAMOT</h1></a>
-        </div>
-        <nav>
-            <ul>
-                <li class="liNav inline">
-                    <a href="../pages/filmaciones.html" class="navLink">Filmaciones</a>
-                </li>
-                <li class="liNav inline">
-                    <a href="../pages/produccion.html" class="navLink">Producción</a>
-                </li>
-                <li class="liNav inline">
-                    <a href="../pages/rowling.html" class="navLink">JK Rowling</a>
-                </li>
-                <li class="liNav inline">
-                    <a href="../pages/contactanos.html" class="navLink">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--MAIN-->
-    <main>
-        <!--FILMACIONES-->
-        <section>
-            <h2>Filmaciones</h2>
-            <!--PORTADAS, NOMBRES, DIRECTORES-->
-            <article id="filmArticle">
-                <div id="filmdiv1">
-                    <!--LA PIEDRA FILOSOFAL-->
-                    <div id="filmHP1div">
-                        <h3>'La Piedra Filosofal'</h3>
-                        <div><img src="../img/hp1.jpg" alt="Harry Potter Y La Piedra Filosofal" id="hp1imgFilm" class="inline"></div>
-                        <div><p>Chris Columbus</p></div>
+    <div id="film_container">
+        <!--HEADER Y NAVEGACION-->
+        <header id="header">
+            <div id="desktoph1_div">
+                <a href="../index.html" id="h1Link"><h1>WIZENGAMOT</h1></a>
+            </div>
+            <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+                <div id="navbar_container" class="container-fluid">
+                    <div id="mobileh1_div">
+                        <a href="../index.html" id="h1Link"><h1>WIZENGAMOT</h1></a>
                     </div>
-                    <!--LA CAMARA SECRETA-->
-                    <div id="filmHP2div">
-                        <h3>'La Cámara Secreta'</h3>
-                        <div><img src="../img/hp2.jpeg" alt="Harry Potter Y La Cámara Secreta" id="hp2imgFilm" class="inline"></div>
-                        <div><p>Chris Columbus</p></div>
-                    </div>
-                    <!--EL PRISIONERO DE AZKABAN-->
-                    <div id="filmHP3div">
-                        <h3>'El Prisionero de Azkaban'</h3>
-                        <div><img src="../img/hp3.jpg" alt="Harry Potter Y El Prisionero De Azkaban" id="hp3imgFilm" class="inline"></div>
-                        <div><p>Alfonso Cuarón</p></div>
-                    </div>
-                    <!--EL CALIZ DE FUEGO-->
-                    <div id="filmHP4div">
-                        <h3>'El Cáliz de Fuego'</h3>
-                        <div><img src="../img/hp4.jpg" alt="Harry Potter Y El Cáliz De Fuego" id="hp4imgFilm" class="inline"></div>
-                        <div><p>Mike Newell</p></div>
+                <button id="navbarButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div id="navbarLinks_container" class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="./filmaciones.html">Filmaciones</a>
+                    <a class="nav-link" href="./produccion.html">Producción</a>
+                    <a class="nav-link" href="./rowling.html">JK Rowling</a>
+                    <a class="nav-link" href="./contactanos.html">Contacto</a>
                     </div>
                 </div>
-                <div id="filmdiv2">
-                    <!--LA ORDEN DEL FENIX-->
-                    <div id="filmHP5div">
-                        <h3>'La Orden del Fénix'</h3>
-                        <div><img src="../img/hp5.jpg" alt="Harry Potter Y La Orden Del Fénix" id="hp5imgFilm" class="inline"></div>
-                        <div><p>David Yates</p></div>
+                </div>
+            </nav>
+        </header>
+        <!--MAIN-->
+        <main id="film_main">
+            <!--FILMACIONES-->
+            <section>
+                <div id="filmh2_container">
+                    <h2>Filmaciones</h2>
+                </div>
+                <!--PORTADAS, NOMBRES, DIRECTORES-->
+                <article>
+                    <div>
+                        <!--LA PIEDRA FILOSOFAL-->
+                        <div>
+                            <h3>'La Piedra Filosofal'</h3>
+                            <div><img src="../img/hp1.jpg" alt="Harry Potter Y La Piedra Filosofal" id="film_img"></div>
+                            <div><p>Chris Columbus</p></div>
+                        </div>
+                        <!--LA CAMARA SECRETA-->
+                        <div>
+                            <h3>'La Cámara Secreta'</h3>
+                            <div><img src="../img/hp2.jpeg" alt="Harry Potter Y La Cámara Secreta" id="film_img"></div>
+                            <div><p>Chris Columbus</p></div>
+                        </div>
+                        <!--EL PRISIONERO DE AZKABAN-->
+                        <div>
+                            <h3>'El Prisionero de Azkaban'</h3>
+                            <div><img src="../img/hp3.jpg" alt="Harry Potter Y El Prisionero De Azkaban" id="film_img"></div>
+                            <div><p>Alfonso Cuarón</p></div>
+                        </div>
+                        <!--EL CALIZ DE FUEGO-->
+                        <div>
+                            <h3>'El Cáliz de Fuego'</h3>
+                            <div><img src="../img/hp4.jpg" alt="Harry Potter Y El Cáliz De Fuego" id="film_img"></div>
+                            <div><p>Mike Newell</p></div>
+                        </div>
                     </div>
-                    <!--EL PRINCIPE MESTIZO-->
-                    <div id="filmHP6div">
-                        <h3>'El Príncipe Mestizo'</h3>
-                        <div><img src="../img/hp6.jpg" alt="Harry Potter Y El Príncipe Mestizo" id="hp6imgFilm" class="inline"></div>
-                        <div><p>David Yates</p></div>
+                    <div>
+                        <!--LA ORDEN DEL FENIX-->
+                        <div>
+                            <h3>'La Orden del Fénix'</h3>
+                            <div><img src="../img/hp5.jpg" alt="Harry Potter Y La Orden Del Fénix" id="film_img"></div>
+                            <div><p>David Yates</p></div>
+                        </div>
+                        <!--EL PRINCIPE MESTIZO-->
+                        <div>
+                            <h3>'El Príncipe Mestizo'</h3>
+                            <div><img src="../img/hp6.jpg" alt="Harry Potter Y El Príncipe Mestizo" id="film_img"></div>
+                            <div><p>David Yates</p></div>
+                        </div>
+                        <!--LAS RELIQUIAS DE LA MUERTE-->
+                        <div>
+                            <h3>'Las Reliquias de la Muerte'</h3>
+                                <div>
+                                    <div><img src="../img/hp71.jpg" alt="Harry Potter Y Las Reliquias De La Muerte Parte Uno" id="film_img"></div>
+                                    <div><p>David Yates</p></div>
+                                </div>
+                                <div>
+                                    <div><img src="../img/hp72.jpg" alt="Harry Potter Y Las Reliquias De La Muerte Parte Dos" id="film_img"></div>
+                                    <div><p>David Yates</p></div>
+                                </div>
+                        </div>
                     </div>
-                    <!--LAS RELIQUIAS DE LA MUERTE-->
-                    <div id="filmHP7div">
-                        <h3>'Las Reliquias de la Muerte'</h3>
-                            <div>
-                                <div><img src="../img/hp71.jpg" alt="Harry Potter Y Las Reliquias De La Muerte Parte Uno" id="hp71imgFilm" class="inline"></div>
-                                <div><p>David Yates</p></div>
-                            </div>
-                            <div>
-                                <div><img src="../img/hp72.jpg" alt="Harry Potter Y Las Reliquias De La Muerte Parte Dos" id="hp72imgFilm" class="inline"></div>
-                                <div><p>David Yates</p></div>
-                            </div>
+                </article>
+                <!--TEXTO DEL SECTION FILMACIONES-->
+                <article>
+                    <div>
+                        <p>
+                            En esta sección te mostramos el orden de las filmaciones de Harry Potter con sus respectivos directores.
+                            La saga de películas de Harry Potter comenzó en 2001, con el lanzamiento de “Harry Potter y La Piedra Filosofal”. Esta primera filmación, junto con su secuela fueron dirigidas por el cineasta Chris Columbus. Se comentaba que este director era particularmente bueno para trabajar con niños, lo cual fue de gran utilidad, ya que debía encargarse de una película cuya mayoría de actores (incluyendo a los tres protagonistas) rondaban las edades de 9 a 13 años.
+                        </p>
                     </div>
-                </div>
-            </article>
-            <!--TEXTO DEL SECTION FILMACIONES-->
-            <article>
-                <div>
-                    <p>
-                        En esta sección te mostramos el orden de las filmaciones de Harry Potter con sus respectivos directores.
-                        La saga de películas de Harry Potter comenzó en 2001, con el lanzamiento de “Harry Potter y La Piedra Filosofal”. Esta primera filmación, junto con su secuela fueron dirigidas por el cineasta Chris Columbus. Se comentaba que este director era particularmente bueno para trabajar con niños, lo cual fue de gran utilidad, ya que debía encargarse de una película cuya mayoría de actores (incluyendo a los tres protagonistas) rondaban las edades de 9 a 13 años.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        Algo más que destacamos de las direcciones de estas filmaciones lo vemos en la referente al tercer libro, “El prisionero de Azkaban”. Esta película estuvo a cargo del director mexicano Alfonso Cuarón, de quien admiramos la naturalidad que consiguió darle al mundo mágico al pedirle a absolutamente todos los actores que hacían de estudiantes de Hogwarts, incluyendo los extras, que le den su propio estilo a la vestimenta a sus personajes, generando que cada persona que saliera en la pantalla grande pareciera estar realmente viva en ese mundo, y no ser un simple extra más, con un look promedio, para rellenar el fondo de las tomas.
-                    </p>
-                </div>
-            </article>
-        </section>
-        <!--HOMENAJES-->
-        <section>
-            <h2>Homenajes</h2>
-            <article>
-                <p>Queremos recordar y homenajear a los actores de Harry Potter que han fallecido y a los que siempre recordaremos con amor.</p>
-            </article>
-            <!--ALAN RICKMAN-->
-            <article>
-                <div><img src="../img/Alan.jpg" alt="Alan Rickman"></div>
-                <div><h3>Alan Rickman</h3></div>
-                <div>
-                    <p>
-                        Alan fue el actor que interpretó al profesor Snape en la saga de películas de Harry Potter. Este personaje va adquiriendo el cariño de los fanáticos con el avanzar de la historia, porque descubrimos que es quien se encarga de cuidar a Harry a lo largo de su paso por Hogwarts, principalmente debido a su amor fallido con la madre del niño, Lily.
-                        Alan falleció el 14 de enero de 2016 en Londres a causa de un cáncer de páncreas a los 69 años.
-                        Su frase más célebre y por la que todos lo recordamos es: “After all this time, Always”. Esta frase hace referencia a una línea del profesor Snape, cuando Dumbledore, su más leal maestro, le pregunta si “despues de todo este tiempo”, su amor por Lily seguía vivo, a lo que el profesor responde “Siempre”.
-                    </p>
-                </div>
-            </article>
-            <!--HELEN MCCRORY-->
-            <article>
-                <div><img src="../img/Helen.jpg" alt="Helen McCrory"></div>
-                <div><h3>Helen McCrory</h3></div>
-                <div>
-                    <p>
-                        Helen fue la actriz que interpretó a Narcissa Malfoy, la madre de Draco Malfoy. Este personaje también es de los que los fanáticos le agarran cariño, especialmente en el último libro, ya que ahí se nota con mucha claridad como, aún siendo muy fiel y protectora de su familia, ella realmente está del lado de Harry y tiene la valentía y capacidad de mentirle a Voldemort y a todo su ejército para ayudar a Harry, dándo a entender que estaba muerto, cuando en realidad solo estaba dormido.
-                        Helen falleció el 16 de abril de 2021, a los 52 años, tras padecer cáncer de mama.</p>
-                </div>
-            </article>
-            <!--ROBBIE COLTRANE-->
-            <article>
-                <div><img src="../img/Robbie.jpg" alt="Robbie Coltrane"></div>
-                <div><h3>Robbie Coltrane</h3></div>
-                <div>
-                    <p>
-                        Robbie fue el actor que interpretó a Rubeus Hagridm otro personaje amado por los fanáticos de la saga. Esto se debe a la gran lealtad de este personaje, especialmente hacia Dumbledore y a la lucha contra Lord Voldemort. También porque notamos una gran valentía de su parte al realizar tareas sumamente peligrosas contra el ejército oscuro, y especialmente por el cuidado y amor que tiene por Harry.
-                        Robbie falleció el 14 de octubre de 2022 en un hospital cerca de su casa en Larbert, Escocia después de una extensa enfermedad con la que luchó por mucho tiempo: osteoartritis.</p>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p id="footerP" class="inline">© Ramiro Kalinoski - Todos los derechos reservados</p>
-    </footer>
+                    <div>
+                        <p>
+                            Algo más que destacamos de las direcciones de estas filmaciones lo vemos en la referente al tercer libro, “El prisionero de Azkaban”. Esta película estuvo a cargo del director mexicano Alfonso Cuarón, de quien admiramos la naturalidad que consiguió darle al mundo mágico al pedirle a absolutamente todos los actores que hacían de estudiantes de Hogwarts, incluyendo los extras, que le den su propio estilo a la vestimenta a sus personajes, generando que cada persona que saliera en la pantalla grande pareciera estar realmente viva en ese mundo, y no ser un simple extra más, con un look promedio, para rellenar el fondo de las tomas.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <!--HOMENAJES-->
+            <section>
+                <h2>Homenajes</h2>
+                <article>
+                    <p>Queremos recordar y homenajear a los actores de Harry Potter que han fallecido y a los que siempre recordaremos con amor.</p>
+                </article>
+                <!--ALAN RICKMAN-->
+                <article>
+                    <div><img src="../img/Alan.jpg" alt="Alan Rickman"></div>
+                    <div><h3>Alan Rickman</h3></div>
+                    <div>
+                        <p>
+                            Alan fue el actor que interpretó al profesor Snape en la saga de películas de Harry Potter. Este personaje va adquiriendo el cariño de los fanáticos con el avanzar de la historia, porque descubrimos que es quien se encarga de cuidar a Harry a lo largo de su paso por Hogwarts, principalmente debido a su amor fallido con la madre del niño, Lily.
+                            Alan falleció el 14 de enero de 2016 en Londres a causa de un cáncer de páncreas a los 69 años.
+                            Su frase más célebre y por la que todos lo recordamos es: “After all this time, Always”. Esta frase hace referencia a una línea del profesor Snape, cuando Dumbledore, su más leal maestro, le pregunta si “despues de todo este tiempo”, su amor por Lily seguía vivo, a lo que el profesor responde “Siempre”.
+                        </p>
+                    </div>
+                </article>
+                <!--HELEN MCCRORY-->
+                <article>
+                    <div><img src="../img/Helen.jpg" alt="Helen McCrory"></div>
+                    <div><h3>Helen McCrory</h3></div>
+                    <div>
+                        <p>
+                            Helen fue la actriz que interpretó a Narcissa Malfoy, la madre de Draco Malfoy. Este personaje también es de los que los fanáticos le agarran cariño, especialmente en el último libro, ya que ahí se nota con mucha claridad como, aún siendo muy fiel y protectora de su familia, ella realmente está del lado de Harry y tiene la valentía y capacidad de mentirle a Voldemort y a todo su ejército para ayudar a Harry, dándo a entender que estaba muerto, cuando en realidad solo estaba dormido.
+                            Helen falleció el 16 de abril de 2021, a los 52 años, tras padecer cáncer de mama.</p>
+                    </div>
+                </article>
+                <!--ROBBIE COLTRANE-->
+                <article>
+                    <div><img src="../img/Robbie.jpg" alt="Robbie Coltrane"></div>
+                    <div><h3>Robbie Coltrane</h3></div>
+                    <div>
+                        <p>
+                            Robbie fue el actor que interpretó a Rubeus Hagridm otro personaje amado por los fanáticos de la saga. Esto se debe a la gran lealtad de este personaje, especialmente hacia Dumbledore y a la lucha contra Lord Voldemort. También porque notamos una gran valentía de su parte al realizar tareas sumamente peligrosas contra el ejército oscuro, y especialmente por el cuidado y amor que tiene por Harry.
+                            Robbie falleció el 14 de octubre de 2022 en un hospital cerca de su casa en Larbert, Escocia después de una extensa enfermedad con la que luchó por mucho tiempo: osteoartritis.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p id="footerP" class="inline">© Ramiro Kalinoski - Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

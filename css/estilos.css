@@ -1,303 +1,371 @@
-/*RESET CSS*/
 * {
-    margin: 0rem;
-    padding: 0rem;
-}
-
-html {
     font-size: 62.5%;
+}
+
+body {
     background-color: #7B8FA1;
+    width: 100vw;
 }
 
-/*PROPIEDADES GENERALES*/
-.aboreto {
-    font-family: 'Aboreto', cursive;
+/*ESTILOS DE MI NAVBAR*/
+#header {
+    background-color: #567189;
+    font-size: 20rem;
+    grid-area: header;
 }
-.sofiaSans {
+
+#desktoph1_div {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 0.1rem whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#navbar_container {
+    background-color: #567189;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+#navbarLinks_container {
+    width: 100%;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
     font-family: 'Sofia Sans', sans-serif;
-}
-.lato {
-    font-family: 'Lato', sans-serif;
-}
-
-.italic{
-    font-style: italic;
-}
-.underline {
-    text-decoration: underline;
-}
-.overline {
-    text-decoration: overline;
+    color: whitesmoke;
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 
-.inline {
-    display: inline;
+.nav-link:hover {
+    color: whitesmoke
 }
-.inlineblock {
-    display: inline-block;
+
+@media (max-width: 991px){
+    #desktoph1_div {
+        display: none
+    }
+    .nav-link {
+        font-size: 2rem;
+    }
+}
+
+/*NAVBAR EN MOBILE*/
+#mobileh1_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#navbarButton {
+    border: none;
+}
+
+@media (min-width: 992px){
+    #mobileh1_div {
+        display: none
+    }
+}
+
+/*ESTILOS DEL FOOTER*/
+footer {
+    height:10rem;
+    background-color: #567189;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: footer;
+}
+
+#footerP {
+    padding-left: 5rem;
+}
+
+/*ESTILOS GENERALES*/
+h1 {
+    font-family: 'Aboreto', cursive;
+    color: whitesmoke;
+    font-size: 7rem;
 }
 
 h2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-family: 'Sofia Sans', sans-serif;
     color: whitesmoke;
+    text-decoration: underline 0.3rem;
 }
 
 h3 {
     font-size: 3rem;
     font-family: 'Sofia Sans', sans-serif;
     color: whitesmoke;
-}
-
-section {
-    margin: 10rem 5rem;
+    font-style: italic;
+    text-decoration: underline 0.1rem;
 }
 
 p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Lato', sans-serif;
     color: whitesmoke;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-/*PROPIEDADES PARA LINKS*/
+b {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+
+ul li {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+}
+
 a {
     text-decoration: none;
+    padding: 0rem 3rem 0rem 3rem;
 }
 
-/*PROPIEDADES PARA EL HEADER*/
-header {
-    background-color: #567189;
+/*ESTILOS DEL INIICO/INDEX*/
+#inicio_container {
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr;
+    grid-template-areas:
+    "header header header"
+    "imain imain imain"
+    "voldemort voldemort voldemort"
+    "footer footer footer";
 }
 
-#headerh1Div {
-    display: flex;
-    justify-content: center;
+#inicio_main {
+    margin: 10rem 5rem 5rem 5rem;
+    grid-area: imain;
 }
 
-#headerh1 {
-    font-size: 7rem;
-    font-family: 'Aboreto', cursive;
-    color: whitesmoke;
-    text-align: center;
-}
-/*BARRA DE NAV*/
-nav {
-    height: 4rem;
-    padding: 2rem;
-    border-top: 0.1rem solid whitesmoke;
-    display: flex;
-    justify-content: center;
+#inicioh2_container {
+    margin-left: 15rem;
 }
 
-.liNav {
-    margin-top: 1.5rem;
-    margin-right: 2.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 2.5rem;
-}
-.navLink {
-    font-size: 3rem;
-    font-family: 'Sofia Sans', sans-serif;
-    color: whitesmoke;
-}
-
-/*PROPIEDADES PARA EL FOOTER*/
-footer {
-    background-color: #567189;
-    margin-bottom: 0rem;
-    height: 10rem;
-    font-size: 2.5em;
-    font-family: 'Sofia Sans', sans-serif;
-    color: whitesmoke;
-    display: flex;
-}
-
-#footerP {
+#iniciotext_container {
+    text-align: justify;
+    margin-top: 8rem;
     margin-left: 10rem;
 }
 
-/*INICIO*/
-/*PROPIEDADES PARA EL MAIN DEL INICIO*/
-#inicioh2Div {
-    display: inline;
-    margin-left: 30rem;
-    margin-top: 10rem;
+#imgHarry {
+    width: 35rem;
+    border: solid 0.2rem #567189;
+}
+
+#imgHarry_div {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    padding-left: 5rem;
 }
 
-#inicioh2 {
-    display: inline;
+#voldemort_section {
+    margin: 10rem 5rem 15rem 5rem;
+    grid-area: voldemort;
 }
 
-#presentacionSection {
+#voldemorttext_article {
+    text-align: justify;
     margin-top: 5rem;
-    padding: 0rem;
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: space-evenly;
 }
 
-#presentacionArticle {
-    padding: 5rem 5rem 5rem 5rem;
-    width: 50vw;
+#voldemorttext_article_div {
+    padding-left: 10rem;
+}
+
+#imgVoldemort {
+    width: 35rem;
+    border: solid 0.2rem #567189;
+}
+
+#imgVoldemort_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+@media (max-width: 1200px){
+    #inicio_main {
+        margin: 5rem 5rem 5rem 5rem;
+    }
+    #iniciomain_container {
+        width: 100%;
+        padding: 0rem;
+    }
+    #iniciomain_container article{
+        width: 100%;
+        padding: 0rem;
+    }
+    #inicioh2_container {
+        display: flex;
+        justify-content: center;
+        margin-left: 0rem;
+    }
+    #iniciotext_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-left: 0rem;
+    }
+    #imgHarry_div {
+        margin-top: 5rem;
+    }
+    #voldemort_section {
+        margin: 5rem 5rem 5rem 5rem;
+    }
+    #voldemorttext_article_div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-left: 0rem;
+    }
+    #imgVoldemort_article {
+        margin-top: 5rem;
+    }
+}
+
+/*ESTILOS DE LA SECCIÓN FILMACIONES*/
+#film_container {
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas:
+    "header header header"
+    "fmain fmain fmain"
+    "footer footer footer";
+}
+
+#film_main {
+    grid-area: fmain;
+}
+
+#filmh2_container {
+    display: flex;
+    justify-content: center;
+}
+
+#film_img {
+    height: 50rem;
+    border: solid 0.2rem #567189;
+}
+
+/*ESTILOS DE LA SECCIÓN JK ROWLING*/
+#rowl_container {
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas:
+    "header header header"
+    "rmain rmain rmain"
+    "footer footer footer";
+}
+
+#rowl_main {
+    margin: 5rem 5rem 5rem 5rem;
+    grid-area: rmain;
+}
+
+#rowl_section1 {
+    margin: 10rem 5rem 5rem 5rem;
+}
+
+#rowlimg_div {
+    width: 100%;
+    margin-left: 8rem;
+}
+
+#rowl_img {
+    width: 50rem;
+    border: solid 0.2rem #567189;
+}
+
+#rolwh2_container {
+    display: flex;
+    justify-content: center;
+}
+
+#section1rowltext_div {
+    text-align: justify;
+    padding-top: 7rem;
+}
+
+#ulrowl_container {
+    text-align: justify;
+    margin: 7rem 3rem 0rem 3rem;
+    padding: 0rem 5rem 0rem 5rem;
+}
+
+#rowl_section2 {
+    margin: 10rem 5rem 15rem 5rem;
+}
+
+#section2rowltext_container {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-left: 8rem;
 }
 
-#harryimgArticle {
-    padding-right: 10rem;
-}
-
-#harryimgInicio {
-    height:55rem;
-    border: 0.25rem solid #567189;
-}
-/*PROPIEDADES PARA LA SEGUNDA SECCIÓN DEL INDEX, LA DE VOLDEMORT*/
-#voldemortSection {
-    font-size: 2.5rem;
-    margin-top: 5rem;
-    padding: 0rem;
+#rowlbookimg_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
+    padding-right: 5rem;
 }
 
-#voldemortArticle {
-    padding: 2rem 5rem 5rem 5rem;
-    width: 50vw;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+#rowlbook_img {
+    width: 50rem;
+    border: solid 0.2rem #567189;
 }
 
-#voldemortimgArticle {
-    padding-right: 10rem;
-}
-
-#voldemortimgInicio {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-/*FILMACIONES*/
-/*SECCION FILMACIONES*/
-
-
-#filmArticle {
-    display: flex;
-    flex-direction: column;
-}
-
-#filmdiv1 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#filmdiv2 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#filmHP1div {
-    display: flex;
-    flex-direction: column;
-}
-
-#hp1imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-#filmHP2div {
-    display: flex;
-    flex-direction: column;
-}
-
-#hp2imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-#filmHP3div {
-    display: flex;
-    flex-direction: column;
-}
-
-#hp3imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-#filmHP4div {
-    display: flex;
-    flex-direction: column;
-}
-
-#hp4imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-#filmHP5div {
-    display: flex;
-    flex-direction: column;
-}
-
-#hp5imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-#filmHP6div {
-    display: flex;
-    flex-direction: column;
-}
-
-#hp6imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-#filmHP7div {
-    display: flex;
-}
-
-#hp71imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
-}
-
-#hp72imgFilm {
-    height: 50rem;
-    border: 0.25rem solid #567189;
+@media (max-width: 1200px){
+    #rowlimg_div {
+        display: flex;
+        justify-content: center;
+        margin-left: 0rem;
+    }
+    #rowlsection1_textcontainer {
+        margin-top: 7rem;
+    }
+    #ulrowl_container {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+     #section2rowltext_container {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+     }
+     #rowlbookimg_container {
+        display: none;
+     }
 }
