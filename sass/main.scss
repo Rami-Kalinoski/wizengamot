@@ -1,0 +1,160 @@
+@use 'index';
+@use 'filmaciones';
+@use 'produccion';
+@use 'rowling';
+@use 'contactanos';
+@use 'vars';
+
+// RESET CSS
+* {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: #7B8FA1;
+    width: 100vw;
+}
+
+// ESTILOS NAVBAR
+
+#header {
+    background-color: #567189;
+    font-size: 20rem;
+    grid-area: header;
+}
+
+#desktoph1_div {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 0.1rem whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#navbar_container {
+    background-color: #567189;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+#navbarLinks_container {
+    width: 100%;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    font-family: vars.$link-fontfamily;
+    color: whitesmoke;
+    padding-left: 0rem;
+    padding-right: 0rem;
+        &:hover {
+            color: whitesmoke;
+        }
+}
+
+@media (max-width: 991px){
+    #desktoph1_div {
+        display: none
+    }
+    .nav-link {
+        font-size: 2rem;
+    }
+}
+
+// NAVBAR EN MOBILE
+#mobileh1_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#navbarButton {
+    border: none;
+}
+
+@media (min-width: 992px){
+    #mobileh1_div {
+        display: none
+    }
+}
+
+// ESTILOS FOOTER
+
+footer {
+    height:10rem;
+    background-color: #567189;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: footer;
+}
+
+
+#footerP {
+    padding-left: 5rem;
+}
+
+// ESTILOS GENERALES
+
+h1 {
+    font-family: vars.$h1-fontfamily;
+    color: whitesmoke;
+    font-size: vars.$h1-fontsize;
+}
+
+
+h2 {
+    font-family: vars.$h2-fontfamily;
+    font-size: vars.$h2-fontsize;
+    color: whitesmoke;
+    text-decoration: vars.$h2-decoration;
+}
+
+
+h3 {
+    font-family: vars.$h3-fontfamily;
+    font-size: vars.$h3-fontsize;
+    color: whitesmoke;
+    font-style: italic;
+    text-decoration: vars.$h3-decoration;
+}
+
+
+p {
+    font-family: vars.$p-fontfamily;
+    font-size: vars.$p-fontsize;
+    color: whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+b {
+    font-family: vars.$b-fontfamily;
+    font-size: vars.$b-fontsize;
+    font-weight: 800;
+}
+
+
+ul {
+    li {
+        font-family: vars.$ulli-fontfamily;
+        font-size: vars.$ulli-fontsize;
+        color: whitesmoke;
+    }
+}
+
+
+a {
+    text-decoration: vars.$a-decoration;
+    padding: 0rem 3rem 0rem 3rem;
+}
