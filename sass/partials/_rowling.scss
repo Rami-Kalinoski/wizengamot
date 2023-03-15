@@ -3,7 +3,7 @@
 
 // ESTILOS
 
-#rowl_container {
+.rowl_container {
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 3fr 3fr 3fr;
     grid-template-areas:
@@ -14,36 +14,36 @@
 
 
 
-#rowl_main {
+.rowl_main {
     margin: 5rem 5rem 5rem 5rem;
     grid-area: rmain;
 }
 
-#rowl_section1 {
+.rowl_section1 {
     margin: 10rem 5rem 5rem 5rem;
 }
 
-#rowlimg_div {
+.rowlimg_div {
     width: 100%;
     margin-left: 8rem;
 }
 
-#rowl_img {
+.rowl_img {
     width: 50rem;
     border: solid 0.2rem #567189;
 }
 
-#rolwh2_container {
+.rolwh2_container {
     display: flex;
     justify-content: center;
 }
 
-#section1rowltext_div {
+.section1rowltext_div {
     text-align: justify;
     padding-top: 7rem;
 }
 
-#ulrowl_container {
+.ulrowl_container {
     text-align: justify;
     margin: 7rem 3rem 0rem 3rem;
     padding: 0rem 5rem 0rem 5rem;
@@ -51,11 +51,11 @@
 
 
 
-#rowl_section2 {
+.rowl_section2 {
     margin: 10rem 5rem 15rem 5rem;
 }
 
-#section2rowltext_container {
+.section2rowltext_container {
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -63,13 +63,13 @@
     padding-left: 8rem;
 }
 
-#rowlbookimg_container {
+.rowlbookimg_container {
     display: flex;
     justify-content: end;
     padding-right: 5rem;
 }
 
-#rowlbook_img {
+.rowlbook_img {
     width: 50rem;
     border: solid 0.2rem #567189;
 }
@@ -77,27 +77,27 @@
 
 
 @media (max-width: 1200px){
-    #rowlimg_div {
+    .rowlimg_div {
         display: flex;
         justify-content: center;
         margin-left: 0rem;
     }
-    #rowlsection1_textcontainer {
+    .rowlsection1_textcontainer {
         margin-top: 7rem;
     }
-    #ulrowl_container {
+    .ulrowl_container {
         margin-left: 0rem;
         margin-right: 0rem;
         padding-left: 0rem;
         padding-right: 0rem;
     }
-     #section2rowltext_container {
+     .section2rowltext_container {
         margin-left: 0rem;
         margin-right: 0rem;
         padding-left: 0rem;
         padding-right: 0rem;
      }
-     #rowlbookimg_container {
+     .rowlbookimg_container {
         display: none;
      }
 }

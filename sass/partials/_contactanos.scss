@@ -1,0 +1,189 @@
+// VARIABLES
+@use 'vars';
+
+// ESTILOS
+
+.contact_container {
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas: 
+    "header header header"
+    "cmain cmain cmain"
+    "footer footer footer";
+}
+
+
+.contact_main {
+    margin-bottom: 15rem;
+    grid-area: cmain;
+}
+
+.main_container {
+    margin: 10rem 0rem 0rem 0rem;
+}
+
+.contacttext_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7rem;
+    padding-bottom: 20rem;
+}
+
+.contacth2_container {
+    display: flex;
+    justify-content: center;
+}
+
+.contactP_container {
+    text-align: justify;
+    p {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    margin-top: 5rem;
+}
+
+// FORMULARIO
+
+.form_article {
+    font-size: 2rem;
+    padding-right: 5rem;
+    margin-top: 5rem;
+}
+
+// .formulario {
+//     // display: flex;
+//     // flex-direction: column;
+// }
+
+.deskform_div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: vars.$h3-fontfamily;
+    font-size: vars.$h3-fontsize;
+    color: whitesmoke;
+    text-decoration: underline whitesmoke 1px;
+    text-decoration: vars.$h3-decoration;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.no-margin {
+    margin-top: 0rem;
+}
+
+input {
+    border: solid 1.5px whitesmoke;
+    border-radius: 5px;
+}
+
+.form_input {
+    width: 50rem;
+    font-family: vars.$p-fontfamily;
+    font-size: vars.$p-fontsize;
+    background-color: whitesmoke;
+}
+
+.textarea_input {
+    height: 20rem;
+    width: 100%;
+    font-family: vars.$p-fontfamily;
+    font-size: vars.$p-fontsize;
+    background-color: whitesmoke;
+    border: solid 1.5px whitesmoke;
+    border-radius: 5px;
+}
+
+.buttons_container {
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.boton {
+    height: 5rem;
+    width: 12rem;
+    font-family: vars.$p-fontfamily;
+    font-size: 1.8rem;
+    background-color: whitesmoke;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.mobileform_div {
+    display: none;
+}
+
+// MOBILE
+@media (max-width: 1200px) {
+    .contacttext_container {
+        padding-left: 0rem;
+        padding-bottom: 5rem;
+    }
+
+    .contactP_container{
+        p {
+            padding-left: 15rem;
+            padding-right: 15rem;
+        }
+    }
+
+    .form_article {
+        padding: 0rem 15rem 0rem 15rem;
+    }
+
+    .deskform_div {
+        display: none;
+    }
+
+    .mobileform_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .email_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .textarea_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .form_input {
+        width: 100%;
+    }
+
+    .textarea_input {
+        width: 100%;
+    }
+
+    .buttons_container {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .boton {
+        margin: 0rem;
+    }
+}

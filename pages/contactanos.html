@@ -18,59 +18,91 @@
     <title>Wizengamot | Contacto</title>
 </head>
 <body>
-    <!--HEADER Y NAVEGACION-->
-    <header id="header">
-        <div id="desktoph1_div">
-            <a href="../index.html" id="h1Link"><h1>WIZENGAMOT</h1></a>
-        </div>
-        <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-            <div id="navbar_container" class="container-fluid">
-                <div id="mobileh1_div">
-                    <a href="../index.html" id="h1Link"><h1>WIZENGAMOT</h1></a>
-                </div>
-            <button id="navbarButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div id="navbarLinks_container" class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="./filmaciones.html">Filmaciones</a>
-                <a class="nav-link" href="./produccion.html">Producción</a>
-                <a class="nav-link" href="./rowling.html">JK Rowling</a>
-                <a class="nav-link" href="./contactanos.html">Contacto</a>
-                </div>
+    <div class="contact_container">
+        <!--HEADER Y NAVEGACION-->
+        <header class="header">
+            <div class="desktoph1_div">
+                <a href="./index.html" class="h1Link"><h1>WIZENGAMOT</h1></a>
             </div>
-            </div>
-        </nav>
-    </header>
-    <!--MAIN-->
-    <main>
-        <section>
-            <h2>Contactanos</h2>
-            <!--ARTICLE CON EL TEXTO DEL "CONTACTANOS"-->
-            <article>
-                <p>
-                    Como te comentamos anteriormente, este sitio web no es profesional y su objetivo es compartir nuestra opinión y gusto por la novela.
-                    Si tenes alguna recomendación, duda, queja o comentario no dudes en hacérnoslo saber. 
-                </p>
-            </article>
-            <!--ARTICLE CON EL FORMULARIO-->
-            <article>
-                <form action="" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Ingresa tu email" required>
-                    <label for="comentario">Comentario</label>
-                    <textarea name="" id="comentario" cols="50" rows="10" placeholder="Dejanos tu mensaje" required></textarea>
-                    <input type="submit">
-                    <input type="reset">
-                </form>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>© Ramiro Kalinoski - Todos los derechos reservados</p>
-    </footer>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="navbar_container container-fluid">
+                    <div class="mobileh1_div">
+                        <a href="./index.html" class="h1Link"><h1>WIZENGAMOT</h1></a>
+                    </div>
+                <button class="navbarButton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbarNavAltMarkup collapse navbar-collapse">
+                    <div class="navbarLinks_container navbar-nav">
+                    <a class="nav-link" aria-current="page" href="./pages/filmaciones.html">Filmaciones</a>
+                    <a class="nav-link" href="./pages/produccion.html">Producción</a>
+                    <a class="nav-link" href="./pages/rowling.html">JK Rowling</a>
+                    <a class="nav-link" href="./pages/contactanos.html">Contacto</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <!--MAIN-->
+        <main class="contact_main">
+            <section class="main_container row">
+                <!--ARTICLE CON EL TITULO Y EL TEXTO DEL "CONTACTANOS"-->
+                <article class="contacttext_container col-xl-6">
+                    <div class="contacth2_container col-12 col-sm-12">
+                        <h2>Contactanos</h2>
+                    </div>
+                    <div class="contactP_container col-12 col-sm-12">
+                        <p>
+                            Como te comentamos anteriormente, este sitio web no es profesional y su objetivo es compartir nuestra opinión y gusto por la novela.
+                            Si tenes alguna recomendación, duda, queja o comentario no dudes en hacérnoslo saber. 
+                        </p>
+                    </div>
+                </article>
+                <!--ARTICLE CON EL FORMULARIO-->
+                <article class="form_article col-xl-6 col-12 col-sm-12">
+                    <form action="" method="post" class="formulario">
+
+                        <!-- FORMULARIO EN DESKTOP -->
+                        <div class="deskform_div">
+                            <label for="nombre" class="no-margin">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required class="form_input">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Ingresa tu email" required class="form_input">
+                            <label for="comentario">Comentario</label>
+                            <textarea name="" id="comentario" cols="50" rows="10" placeholder="Dejanos tu mensaje" required class="textarea_input"></textarea>
+                        <div class="buttons_container">
+                            <input type="submit" class="boton">
+                            <input type="reset" class="boton">
+                        </div>
+                        </div>
+
+                        <!--FORMULARIO EN MOBILE-->
+                        <div class="mobileform_div">
+                            <div class="name_container">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" placeholder="Ingresa tu nombre" required class="form_input">
+                            </div>
+                            <div class="email_container">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Ingresa tu email" required class="form_input">
+                            </div>
+                            <div class="textarea_container">
+                                <label for="comentario">Comentario</label>
+                                <textarea name="" id="comentario" cols="50" rows="10" placeholder="Dejanos tu mensaje" required class="textarea_input"></textarea>
+                            </div>
+                            <div class="buttons_container">
+                                <input type="submit" class="boton">
+                                <input type="reset" class="boton">
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p class="footerP">© Ramiro Kalinoski - Todos los derechos reservados</p>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

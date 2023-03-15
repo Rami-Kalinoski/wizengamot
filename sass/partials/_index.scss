@@ -3,7 +3,7 @@
 
 // ESTILOS
 
-#inicio_container {
+.inicio_container {
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 4fr 4fr 4fr 4fr;
     grid-template-areas:
@@ -15,27 +15,27 @@
 
 
 
-#inicio_main {
+.inicio_main {
     margin: 10rem 5rem 5rem 5rem;
     grid-area: imain;
 }
 
-#inicioh2_container {
+.inicioh2_container {
     margin-left: 15rem;
 }
 
-#iniciotext_container {
+.iniciotext_container {
     text-align: justify;
     margin-top: 8rem;
     margin-left: 10rem;
 }
 
-#imgHarry {
+.imgHarry {
     width: 35rem;
     border: solid 0.2rem #567189;
 }
 
-#imgHarry_div {
+.imgHarry_div {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,26 +45,26 @@
 
 
 
-#voldemort_section {
+.voldemort_section {
     margin: 10rem 5rem 15rem 5rem;
     grid-area: voldemort;
 }
 
-#voldemorttext_article {
+.voldemorttext_article {
     text-align: justify;
     margin-top: 5rem;
 }
 
-#voldemorttext_article_div {
+.voldemorttext_article_div {
     padding-left: 10rem;
 }
 
-#imgVoldemort {
+.imgVoldemort {
     width: 35rem;
     border: solid 0.2rem #567189;
 }
 
-#imgVoldemort_article {
+.imgVoldemort_article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,25 +74,25 @@
 
 
 @media (max-width: 1200px){
-    #inicio_main {
+    .inicio_main {
         margin: 5rem 5rem 5rem 5rem;
     }
-    #iniciomain_container {
+    .iniciomain_container {
         width: 100%;
         padding: 0rem;
     }
-    #iniciomain_container {
+    .iniciomain_container {
         article{
             width: 100%;
             padding: 0rem;
     }
     }
-    #inicioh2_container {
+    .inicioh2_container {
         display: flex;
         justify-content: center;
         margin-left: 0rem;
     }
-    #iniciotext_container {
+    .iniciotext_container {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -102,13 +102,13 @@
         padding-right: 5rem;
         margin-left: 0rem;
     }
-    #imgHarry_div {
+    .imgHarry_div {
         margin-top: 5rem;
     }
-    #voldemort_section {
+    .voldemort_section {
         margin: 5rem 5rem 5rem 5rem;
     }
-    #voldemorttext_article_div {
+    .voldemorttext_article_div {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -118,7 +118,7 @@
         padding-right: 5rem;
         margin-left: 0rem;
     }
-    #imgVoldemort_article {
+    .imgVoldemort_article {
         margin-top: 5rem;
     }
 }
