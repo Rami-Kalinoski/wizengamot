@@ -1,0 +1,200 @@
+// VARIABLES
+@use 'vars';
+
+// ESTILOS
+
+.film_container {
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas: 
+    "header header header"
+    "fmain fmain fmain fmain"
+    "footer footer footer";
+}
+
+
+
+.film_main {
+    grid-area: fmain;
+}
+
+.film_section {
+    margin: 10rem 5rem 5rem 5rem;
+}
+
+.filmh2_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.portadas_article {
+    display: flex;
+    flex-direction: column;
+}
+
+.film_portada {
+    height: 50rem;
+    border: solid 0.2rem #567189;
+}
+
+.portadas1_div {
+    display: flex;
+    justify-content: space-around;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            padding: 1rem 0rem 1rem 0rem;
+        };
+    };
+    p {
+        font-style: italic;
+    };
+}
+
+.portadas2_div {
+    display: flex;
+    justify-content: space-around;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            padding: 1rem 0rem 1rem 0rem;
+        };
+    };
+    p {
+        font-style: italic;
+    };
+}
+
+.filmtext_container {
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    div {
+        width: 50%;
+    };
+    padding: 0rem 5rem 0rem 5rem;
+}
+
+// HOMENAJES
+.homenaje_section {
+    margin: 5rem 5rem 15rem 5rem;
+}
+
+.homenajeh2_container {
+    display: flex;
+    justify-content: center;
+}
+
+.homenajetext_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.homenaje_img {
+    height: 70rem;
+    border: solid 0.2rem #567189;
+}
+
+.alan_article {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        margin-top: 3rem;
+    };
+    p {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    };
+    margin: 7rem 0rem 0rem 0rem;
+}
+
+.alantext_container {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.helen_article {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        margin-top: 3rem;
+    };
+    p {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    };
+    margin: 7rem 0rem 0rem 0rem;
+}
+
+.helentext_container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.robbie_article {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        margin-top: 3rem;
+    };
+    p {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    };
+    margin: 7rem 0rem 0rem 0rem;
+}
+
+.robbietext_container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+// RESPONSIVE
+
+@media (max-width: 1500px) {
+    .film_section {
+        h3 {
+            font-size: 2.5rem;
+        };
+    }
+    .film_portada {
+        height: 35rem;
+    }
+}
+
+// MOBILE
+
+@media (max-width: 1200px) {
+    .portadas1_div {
+        flex-direction: column;
+    }
+    .portadas2_div {
+        flex-direction: column;
+    }
+    .film_portada {
+        height: 45rem;
+    }
+    .filmtext_container {
+        flex-direction: column;
+        justify-content: start;
+        div {
+            width: 100%;
+        };
+    }
+    .alantext_container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}

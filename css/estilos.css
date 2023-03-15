@@ -1,30 +1,30 @@
-#inicio_container {
+.inicio_container {
   grid-template-columns: 3fr 3fr 3fr;
   grid-template-rows: 4fr 4fr 4fr 4fr;
   grid-template-areas: "header header header" "imain imain imain" "voldemort voldemort voldemort" "footer footer footer";
 }
 
-#inicio_main {
+.inicio_main {
   margin: 10rem 5rem 5rem 5rem;
   grid-area: imain;
 }
 
-#inicioh2_container {
+.inicioh2_container {
   margin-left: 15rem;
 }
 
-#iniciotext_container {
+.iniciotext_container {
   text-align: justify;
   margin-top: 8rem;
   margin-left: 10rem;
 }
 
-#imgHarry {
+.imgHarry {
   width: 35rem;
   border: solid 0.2rem #567189;
 }
 
-#imgHarry_div {
+.imgHarry_div {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -32,26 +32,26 @@
   padding-left: 5rem;
 }
 
-#voldemort_section {
+.voldemort_section {
   margin: 10rem 5rem 15rem 5rem;
   grid-area: voldemort;
 }
 
-#voldemorttext_article {
+.voldemorttext_article {
   text-align: justify;
   margin-top: 5rem;
 }
 
-#voldemorttext_article_div {
+.voldemorttext_article_div {
   padding-left: 10rem;
 }
 
-#imgVoldemort {
+.imgVoldemort {
   width: 35rem;
   border: solid 0.2rem #567189;
 }
 
-#imgVoldemort_article {
+.imgVoldemort_article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,23 +59,23 @@
 }
 
 @media (max-width: 1200px) {
-  #inicio_main {
+  .inicio_main {
     margin: 5rem 5rem 5rem 5rem;
   }
-  #iniciomain_container {
+  .iniciomain_container {
     width: 100%;
     padding: 0rem;
   }
-  #iniciomain_container article {
+  .iniciomain_container article {
     width: 100%;
     padding: 0rem;
   }
-  #inicioh2_container {
+  .inicioh2_container {
     display: flex;
     justify-content: center;
     margin-left: 0rem;
   }
-  #iniciotext_container {
+  .iniciotext_container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -85,13 +85,13 @@
     padding-right: 5rem;
     margin-left: 0rem;
   }
-  #imgHarry_div {
+  .imgHarry_div {
     margin-top: 5rem;
   }
-  #voldemort_section {
+  .voldemort_section {
     margin: 5rem 5rem 5rem 5rem;
   }
-  #voldemorttext_article_div {
+  .voldemorttext_article_div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -101,56 +101,351 @@
     padding-right: 5rem;
     margin-left: 0rem;
   }
-  #imgVoldemort_article {
+  .imgVoldemort_article {
     margin-top: 5rem;
   }
 }
-#rowl_container {
+.film_container {
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-template-areas: "header header header" "fmain fmain fmain fmain" "footer footer footer";
+}
+
+.film_main {
+  grid-area: fmain;
+}
+
+.film_section {
+  margin: 10rem 5rem 5rem 5rem;
+}
+
+.filmh2_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portadas_article {
+  display: flex;
+  flex-direction: column;
+}
+
+.film_portada {
+  height: 50rem;
+  border: solid 0.2rem #567189;
+}
+
+.portadas1_div {
+  display: flex;
+  justify-content: space-around;
+}
+.portadas1_div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portadas1_div div div {
+  padding: 1rem 0rem 1rem 0rem;
+}
+.portadas1_div p {
+  font-style: italic;
+}
+
+.portadas2_div {
+  display: flex;
+  justify-content: space-around;
+}
+.portadas2_div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portadas2_div div div {
+  padding: 1rem 0rem 1rem 0rem;
+}
+.portadas2_div p {
+  font-style: italic;
+}
+
+.filmtext_container {
+  text-align: justify;
+  display: flex;
+  justify-content: space-around;
+  padding: 0rem 5rem 0rem 5rem;
+}
+.filmtext_container div {
+  width: 50%;
+}
+
+.homenaje_section {
+  margin: 5rem 5rem 15rem 5rem;
+}
+
+.homenajeh2_container {
+  display: flex;
+  justify-content: center;
+}
+
+.homenajetext_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.homenaje_img {
+  height: 70rem;
+  border: solid 0.2rem #567189;
+}
+
+.alan_article {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0rem 0rem 0rem;
+}
+.alan_article h3 {
+  margin-top: 3rem;
+}
+.alan_article p {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.alantext_container {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.helen_article {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0rem 0rem 0rem;
+}
+.helen_article h3 {
+  margin-top: 3rem;
+}
+.helen_article p {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.helentext_container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.robbie_article {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0rem 0rem 0rem;
+}
+.robbie_article h3 {
+  margin-top: 3rem;
+}
+.robbie_article p {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.robbietext_container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (max-width: 1500px) {
+  .film_section h3 {
+    font-size: 2.5rem;
+  }
+  .film_portada {
+    height: 35rem;
+  }
+}
+@media (max-width: 1200px) {
+  .portadas1_div {
+    flex-direction: column;
+  }
+  .portadas2_div {
+    flex-direction: column;
+  }
+  .film_portada {
+    height: 45rem;
+  }
+  .filmtext_container {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .filmtext_container div {
+    width: 100%;
+  }
+  .alantext_container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+.produ_container {
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-template-areas: "header header header" "pmain pmain pmain" "footer footer footer";
+}
+
+.produ_main {
+  margin: 10rem 5rem 5rem 5rem;
+  grid-area: pmain;
+}
+
+.detrash2_container {
+  display: flex;
+  justify-content: center;
+}
+
+.videoiframes_container {
+  padding: 0rem 10rem 0rem 10rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+.videoiframes_container h3 {
+  margin: 3rem 0rem 1rem 0rem;
+}
+
+.videoiframe_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoiframe {
+  border: solid 0.2rem #567189;
+}
+
+.detrastext_container {
+  text-align: justify;
+  padding: 5rem 12rem 5rem 12rem;
+}
+
+.music_section {
+  margin-top: 10rem;
+}
+
+.musich2_container {
+  display: flex;
+  justify-content: center;
+}
+
+.musictext_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.musiciframes_container {
+  padding: 0rem 10rem 0rem 10rem;
+}
+.musiciframes_container h3 {
+  margin: 3rem 0rem 1rem 0rem;
+}
+.musiciframes_container p {
+  text-align: center;
+}
+
+.musiciframe_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.musiciframe {
+  width: 40rem;
+}
+
+@media (max-width: 1500px) {
+  .videoiframes_container h3 {
+    font-size: 2.5rem;
+  }
+  .videoiframe {
+    width: 40rem;
+    height: 25rem;
+  }
+  .musiciframes_container h3 {
+    font-size: 2.5rem;
+  }
+  .musiciframe {
+    width: 30rem;
+  }
+}
+@media (max-width: 1200px) {
+  .detrastext_container {
+    padding-bottom: 0rem;
+  }
+  .videoiframe {
+    width: 30rem;
+    height: 15rem;
+  }
+  .musiciframe {
+    width: 40rem;
+  }
+}
+@media (max-width: 1100px) {
+  .musiciframe {
+    width: 30rem;
+  }
+}
+@media (max-width: 900px) {
+  .videoiframe {
+    width: 25rem;
+    height: 10rem;
+  }
+}
+.rowl_container {
   grid-template-columns: 3fr 3fr 3fr;
   grid-template-rows: 3fr 3fr 3fr;
   grid-template-areas: "header header header" "rmain rmain rmain" "footer footer footer";
 }
 
-#rowl_main {
+.rowl_main {
   margin: 5rem 5rem 5rem 5rem;
   grid-area: rmain;
 }
 
-#rowl_section1 {
+.rowl_section1 {
   margin: 10rem 5rem 5rem 5rem;
 }
 
-#rowlimg_div {
+.rowlimg_div {
   width: 100%;
   margin-left: 8rem;
 }
 
-#rowl_img {
+.rowl_img {
   width: 50rem;
   border: solid 0.2rem #567189;
 }
 
-#rolwh2_container {
+.rolwh2_container {
   display: flex;
   justify-content: center;
 }
 
-#section1rowltext_div {
+.section1rowltext_div {
   text-align: justify;
   padding-top: 7rem;
 }
 
-#ulrowl_container {
+.ulrowl_container {
   text-align: justify;
   margin: 7rem 3rem 0rem 3rem;
   padding: 0rem 5rem 0rem 5rem;
 }
 
-#rowl_section2 {
+.rowl_section2 {
   margin: 10rem 5rem 15rem 5rem;
 }
 
-#section2rowltext_container {
+.section2rowltext_container {
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -158,40 +453,199 @@
   padding-left: 8rem;
 }
 
-#rowlbookimg_container {
+.rowlbookimg_container {
   display: flex;
   justify-content: end;
   padding-right: 5rem;
 }
 
-#rowlbook_img {
+.rowlbook_img {
   width: 50rem;
   border: solid 0.2rem #567189;
 }
 
 @media (max-width: 1200px) {
-  #rowlimg_div {
+  .rowlimg_div {
     display: flex;
     justify-content: center;
     margin-left: 0rem;
   }
-  #rowlsection1_textcontainer {
+  .rowlsection1_textcontainer {
     margin-top: 7rem;
   }
-  #ulrowl_container {
+  .ulrowl_container {
     margin-left: 0rem;
     margin-right: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
-  #section2rowltext_container {
+  .section2rowltext_container {
     margin-left: 0rem;
     margin-right: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
-  #rowlbookimg_container {
+  .rowlbookimg_container {
     display: none;
+  }
+}
+.contact_container {
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-template-areas: "header header header" "cmain cmain cmain" "footer footer footer";
+}
+
+.contact_main {
+  margin-bottom: 15rem;
+  grid-area: cmain;
+}
+
+.main_container {
+  margin: 10rem 0rem 0rem 0rem;
+}
+
+.contacttext_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7rem;
+  padding-bottom: 20rem;
+}
+
+.contacth2_container {
+  display: flex;
+  justify-content: center;
+}
+
+.contactP_container {
+  text-align: justify;
+  margin-top: 5rem;
+}
+.contactP_container p {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.form_article {
+  font-size: 2rem;
+  padding-right: 5rem;
+  margin-top: 5rem;
+}
+
+.deskform_div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-decoration: underline whitesmoke 1px;
+  text-decoration: underline 0.1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.no-margin {
+  margin-top: 0rem;
+}
+
+input {
+  border: solid 1.5px whitesmoke;
+  border-radius: 5px;
+}
+
+.form_input {
+  width: 50rem;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  background-color: whitesmoke;
+}
+
+.textarea_input {
+  height: 20rem;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  background-color: whitesmoke;
+  border: solid 1.5px whitesmoke;
+  border-radius: 5px;
+}
+
+.buttons_container {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.boton {
+  height: 5rem;
+  width: 12rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  background-color: whitesmoke;
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+.mobileform_div {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contacttext_container {
+    padding-left: 0rem;
+    padding-bottom: 5rem;
+  }
+  .contactP_container p {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .form_article {
+    padding: 0rem 15rem 0rem 15rem;
+  }
+  .deskform_div {
+    display: none;
+  }
+  .mobileform_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .email_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .textarea_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .form_input {
+    width: 100%;
+  }
+  .textarea_input {
+    width: 100%;
+  }
+  .buttons_container {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .boton {
+    margin: 0rem;
   }
 }
 * {
@@ -203,13 +657,14 @@ body {
   width: 100vw;
 }
 
-#header {
-  background-color: #567189;
+.header {
+  background: rgb(86, 113, 137);
+  background: radial-gradient(circle, rgb(86, 113, 137) 72%, rgb(63, 90, 115) 92%);
   font-size: 20rem;
   grid-area: header;
 }
 
-#desktoph1_div {
+.desktoph1_div {
   display: flex;
   justify-content: center;
   border-bottom: solid 0.1rem whitesmoke;
@@ -217,18 +672,19 @@ body {
   padding-bottom: 2rem;
 }
 
-#navbar_container {
-  background-color: #567189;
+.navbar_container {
+  background: rgb(86, 113, 137);
+  background: radial-gradient(circle, rgb(86, 113, 137) 72%, rgb(63, 90, 115) 92%);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-#navbar {
+.navbar {
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
 
-#navbarLinks_container {
+.navbarLinks_container {
   width: 100%;
   padding-left: 18rem;
   padding-right: 18rem;
@@ -247,25 +703,25 @@ body {
 }
 
 @media (max-width: 991px) {
-  #desktoph1_div {
+  .desktoph1_div {
     display: none;
   }
   .nav-link {
     font-size: 2rem;
   }
 }
-#mobileh1_div {
+.mobileh1_div {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-#navbarButton {
+.navbarButton {
   border: none;
 }
 
 @media (min-width: 992px) {
-  #mobileh1_div {
+  .mobileh1_div {
     display: none;
   }
 }
@@ -279,7 +735,11 @@ footer {
 }
 
 #footerP {
-  padding-left: 5rem;
+  padding-left: 10rem;
+}
+
+.footerP {
+  padding-left: 10rem;
 }
 
 h1 {
@@ -307,8 +767,7 @@ p {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   color: whitesmoke;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 b {
