@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:wght@300&family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="./css/estilos.css">
     <!--TITULO-->
@@ -32,17 +34,25 @@
                     <div class="mobileh1_div">
                         <a href="./index.html" class="h1Link"><h1>WIZENGAMOT</h1></a>
                     </div>
-                <button class="navbarButton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbarButton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbarNavAltMarkup collapse navbar-collapse">
-                    <div class="navbarLinks_container navbar-nav">
-                    <a class="nav-link" aria-current="page" href="./pages/filmaciones.html">Filmaciones</a>
-                    <a class="nav-link" href="./pages/produccion.html">Producción</a>
-                    <a class="nav-link" href="./pages/rowling.html">JK Rowling</a>
-                    <a class="nav-link" href="./pages/contactanos.html">Contacto</a>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbarLinks_container navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/filmaciones.html">Filmaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/produccion.html">Producción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/rowling.html">JK Rowling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactanos.html">Contacto</a>
+                        </li>
+                    </ul>
                     </div>
-                </div>
                 </div>
             </nav>
         </header>
@@ -55,14 +65,14 @@
                     </div>
                     <div class="iniciotext_container col-12 col-sm-12">
                         <p>Somos <b>Wizengamot</b> y creamos este sitio web para compartir algunas cosas del mundo creado por JK Rowling: Harry Potter. Aquí verás algunas curiosidades sobre las películas inspiradas desde los libros de esta historia (en las que participó su misma autora), verás algunos extractos de detrás de escenas y compartiremos el fondo musical que se utilizó en las filmaciones, y compartiremos información sobre la vida de JK Rowling.</p>
-                        <p>Nuestro único objetivo con este sitio es compartir nuestro fanatismo y admiración por la historia de Harry Potter y su creadora.
+                        <p class="iniciotext">Nuestro único objetivo con este sitio es compartir nuestro fanatismo y admiración por la historia de Harry Potter y su creadora.
                             El nombre de “Wizengamot” que elejimos para nuestro sitio es en honor a una de las entidades judiciales dentro del mundo de Harry Potter, la cual aparece numerosas veces tanto en los libros como en las adaptaciones cinematográficas.</p>
                     </div>
                 </article>
                 <article class="col-xl-6">
-                    <div class="imgHarry_div col-12 col-sm-12">
-                        <img src="./img/Harry.jpg" alt="Imagen de Harry Potter" class="imgHarry">
-                    </div>
+                        <div class="imgHarry_div col-12 col-sm-12" data-aos="fade-down">
+                            <img src="./img/Harry.jpg" alt="Imagen de Harry Potter" class="imgHarry">
+                        </div>
                 </article>
             </section>
         </main>
@@ -71,10 +81,19 @@
             <article class="voldemorttext_article col-12 col-sm-12 col-xl-6">
                 <div class="voldemorttext_article_div">
                     <p>Aunque nuestra intención no es contarte exclusivamente de qué tratan los libros, resumidamente, podemos decir que <b>“Harry Potter”</b> trata de un niño que descubre su identidad como mago y la existencia de todo un mundo oculto, del cual fue mantenido al margen por mucho tiempo y el cual está siendo azotado por una gran fuerza oscura, liderada su enemigo, Lord Voldemort. A lo largo de la historia, Harry irá descubriendo cosas de su pasado y participará de algunas batallas que representan la lucha del mundo mágico por librarse de “Aquel que no debe ser nombrado”.</p>
-                    <p>Por otro lado, este libro no solo se trata de una historia novelesca, sino que a partir de él encontraremos varias referencias y enseñanzas que la autora nos deja y que refieren a la confrontación de diferentes problemas en la vida cotidiana, que es lo que, personalmente, más admiramos de esta creación de <b>JK Rowling</b>.</p>
+                    <div class="voldemortLeer_desktop">
+                        <p>Por otro lado, este libro no solo se trata de una historia novelesca, sino que a partir de él encontraremos varias referencias y enseñanzas que la autora nos deja y que refieren a la confrontación de diferentes problemas en la vida cotidiana, que es lo que, personalmente, más admiramos de esta creación de <b>JK Rowling</b>.</p>
+                    </div>
+                    <!--LEER MÁS-->
+                    <div class="voldemortLeer_mobile">
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#voldemortLeer_collapse" aria-expanded="false" aria-controls="voldemortLeer_collapse">Leer más</button>
+                        </p>
+                        <p class="collapse" id="voldemortLeer_collapse">Por otro lado, este libro no solo se trata de una historia novelesca, sino que a partir de él encontraremos varias referencias y enseñanzas que la autora nos deja y que refieren a la confrontación de diferentes problemas en la vida cotidiana, que es lo que, personalmente, más admiramos de esta creación de <b>JK Rowling</b>.</p>
+                    </div>
                 </div>
             </article>
-            <article class="imgVoldemort_article col-12 col-sm-12 col-xl-6">
+            <article class="imgVoldemort_article col-12 col-sm-12 col-xl-6" data-aos="fade-down">
                 <img src="./img/Voldemort.png" alt="Imagen de Lord Voldemort" class="imgVoldemort">
             </article>
         </section>
@@ -82,6 +101,12 @@
             <p class="footerP">© Ramiro Kalinoski - Todos los derechos reservados</p>
         </footer>
     </div>
+    <!--BOOTSRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -34,6 +34,7 @@ body {
 }
 
 .navbar_container {
+    width: 100%;
     background: rgb(86,113,137);
     background: radial-gradient(circle, rgba(86,113,137,1) 72%, rgba(63,90,115,1) 92%);
     padding-top: 1.5rem;
@@ -47,8 +48,6 @@ body {
 
 .navbarLinks_container {
     width: 100%;
-    padding-left: 18rem;
-    padding-right: 18rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -68,13 +67,22 @@ body {
         display: none
     }
     .nav-link {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        padding-left: 5rem;
     }
 }
 
 // NAVBAR EN MOBILE
+
+.navbarMobile_container {
+    width: auto;
+    display: flex;
+}
+
 .mobileh1_div {
-    width: 100%;
+    h1 {
+        font-size: 5rem;
+    };
     display: flex;
     justify-content: center;
 }
@@ -83,9 +91,50 @@ body {
     border: none;
 }
 
+.navbar-toggler-icon {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28245, 245, 245, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 @media (min-width: 992px){
     .mobileh1_div {
         display: none
+    }
+}
+
+@media (max-width: 503px) {
+    .mobileh1_div {
+        h1 {
+            font-size: 4.5rem;
+        };
+    }
+}
+
+@media (max-width: 467px) {
+    .mobileh1_div {
+        h1 {
+            font-size: 3rem;
+        };
+    }
+    .navbar-toggler-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .mobileh1_div {
+        h1 {
+            font-size: 2.2rem;
+        };
+    }
+    .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .nav-link {
+        font-size: 1.5rem;
     }
 }
 
@@ -104,6 +153,12 @@ footer {
     padding-left: 10rem;
 }
 
+@media (max-width: 750px) {
+    .footerP {
+        padding-left: 5rem;
+    }
+}
+
 // ESTILOS GENERALES
 
 h1 {
@@ -111,7 +166,6 @@ h1 {
     color: whitesmoke;
     font-size: vars.$h1-fontsize;
 }
-
 
 h2 {
     font-family: vars.$h2-fontfamily;
@@ -153,8 +207,44 @@ ul {
     }
 }
 
+.nav-link {
+    font-size: 3rem;
+}
 
 a {
     text-decoration: vars.$a-decoration;
     padding: 0rem 3rem 0rem 3rem;
+}
+
+@media (max-width: 750px) {
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 619px) {
+    h2 {
+        font-size: 2.7rem;
+    }
+    .nav-link {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    b {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 991px){
+    a {
+        padding: 0rem;
+    }
 }

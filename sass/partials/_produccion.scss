@@ -48,6 +48,10 @@
     padding: 5rem 12rem 5rem 12rem;
 }
 
+.detrastextLeer_container {
+    display: none;
+}
+
 // MUSICA
 
 .music_section {
@@ -118,17 +122,117 @@
     .musiciframe {
         width: 40rem;
     }
+    .detrastext {
+        display: none;
+    }
+    .detrastextLeer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            font-size: 2rem;
+            color: whitesmoke;
+            background-color: #567189;
+            border: none;
+            margin-bottom: 5rem; 
+        };
+    }
 }
 
+
 @media (max-width: 1100px) {
+    .musiciframes_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 100%;
+        };
+    }
+    .musiciframe_div {
+        width: 100%;
+    }
     .musiciframe {
         width: 30rem;
     }
 }
 
+
+@media (max-width: 1045px) {
+    .videoiframes_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detrastext_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+
 @media (max-width: 900px) {
     .videoiframe {
         width: 25rem;
         height: 10rem;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .videoiframes_container {
+        h3 {
+            font-size: 2rem;
+        };
+    }
+    .detrastext_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+
+@media (max-width: 635px) {
+    .videoiframes_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .videoiframe_div {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .videoiframes_container {
+        div {
+            width: 100%;
+            h3 {
+                font-size: 1.5rem;
+            };
+        };
+    }
+    .musiciframes_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .musiciframe {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .videoiframe {
+        width: 20rem;
+        height: auto;
+    }
+    .musiciframe_div {
+        h3 {
+            font-size: 2rem;
+        };
+    }
+    .musiciframe {
+        width: 20rem;
+        height: 40rem;
     }
 }

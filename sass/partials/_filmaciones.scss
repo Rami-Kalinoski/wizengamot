@@ -80,6 +80,10 @@
     padding: 0rem 5rem 0rem 5rem;
 }
 
+.filmtextLeer_mobile {
+    display: none;
+}
+
 // HOMENAJES
 .homenaje_section {
     margin: 5rem 5rem 15rem 5rem;
@@ -121,6 +125,10 @@
     padding-right: 20rem;
 }
 
+.alantextLeer_container {
+    display: none;
+}
+
 .helen_article {
     text-align: justify;
     display: flex;
@@ -141,6 +149,10 @@
     padding-right: 5rem;
 }
 
+.helentextLeer_container {
+    display: none;
+}
+
 .robbie_article {
     text-align: justify;
     display: flex;
@@ -159,6 +171,10 @@
 .robbietext_container {
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+.robbietextLeer_container {
+    display: none;
 }
 
 // RESPONSIVE
@@ -189,12 +205,142 @@
     .filmtext_container {
         flex-direction: column;
         justify-content: start;
+        .filmtext {
+            display: none;
+        };
         div {
             width: 100%;
         };
     }
+    .filmtextLeer_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            font-size: 2rem;
+            color: whitesmoke;
+            background-color: #567189;
+            border: none;
+            margin-bottom: 5rem; 
+        };
+    }
     .alantext_container {
+        p {
+            margin: 1rem 0rem 1rem 0rem;
+        };
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+    .alantext {
+        display: none;
+    }
+    .alantextLeer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            font-size: 2rem;
+            color: whitesmoke;
+            background-color: #567189;
+            border: none;
+        };
+    }
+    .helentext_container {
+        p {
+            margin: 1rem 0rem 1rem 0rem;
+        };
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .helentext {
+        display: none;
+    }
+    .helentextLeer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            font-size: 2rem;
+            color: whitesmoke;
+            background-color: #567189;
+            border: none;
+        };
+    }
+    .robbietext_container {
+        p {
+            margin: 1rem 0rem 1rem 0rem;
+        };
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .robbietext {
+        display: none;
+    }
+    .robbietextLeer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            font-size: 2rem;
+            color: whitesmoke;
+            background-color: #567189;
+            border: none;
+        };
+    }
+}
+
+
+@media (max-width: 820px) {
+    .helentext_container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .robbietext_container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .film_portada {
+        width: 20rem;
+        height: auto;
+    }
+    .filmtext_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .homenajetext_container {
+        p {
+            text-align: justify;
+            padding-left: 0rem;
+            padding-right: 0rem;
+        };
+    }
+    .homenaje_img {
+        width: 25rem;
+        height: auto;
+    }
+    .alantext_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .helentext_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .robbietext_container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+
+@media (max-width: 280px) {
+    .homenaje_img {
+        width: 20rem;
+        height: auto;
     }
 }
